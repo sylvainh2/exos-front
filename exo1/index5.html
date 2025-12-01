@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="./style5.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Contact Us</h1>
+        <form class="formulaire">
+            <div class="cardDouble">
+                <div class="box double">
+                    <label for="">First Name <span>*</span></label>
+                    <input type="text" name="prenom" required/>
+                </div>
+                <div class="box double">
+                    <label for="">Last Name <span>*</span></label>
+                    <input type="text" name="nom" required/>
+                </div>
+            </div>
+            <div class="box">
+                <label>Email Address <span>*</span></label>
+                <input type="email" name="mail" required/>
+            </div>
+            <div class="box">
+                <label>Query Type <span>*</span></label>
+                <div class="cardDouble simple cardGap">
+                    <div class="card radio double">
+                        <input class="radioInput" type="radio" name="quest" required><label>General Enquiries</label></input>
+                    </div>
+                    <div class="card radio double">
+                        <input class="radioInput" type="radio" name="quest" required><label>Support Request</label></input>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <label>Message <span>*</span></label>
+                <textarea class="textA" type="text" cols="30" rows="4" name="message" required></textarea>
+            </div>
+            <input type="checkbox" name="consentement" id="consent" required><label class="radioInput">I consent to being contacted by the team <span>*</span></label></input>
+            <button class="subBut" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

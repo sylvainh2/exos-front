@@ -1,0 +1,128 @@
+body{
+    background-color: rgb(245, 227, 214);
+}
+.container{
+    margin:3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    color:black;
+    width:40%;
+    text-justify:auto;
+}
+.image{
+    border-radius: 5px;
+    width:100%;
+}
+h1{
+    font-size: 2rem;
+    
+}
+.card{
+    margin:2rem auto 0 auto;
+    padding:0.7rem 0;
+    border-radius: 15px;
+    background-color: #FFF8FC;
+    width:100%;
+}
+.listCard{
+    margin:0 0 1rem 2rem;
+    font-size: 1rem;
+    font-weight: normal;
+    color:black;
+    text-transform: none;
+}
+.titleCard{
+    color:rgb(82, 28, 96);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left:-1rem;
+}
+.ingred{
+}
+.title{
+    font-size: 2rem;
+    font-weight:bold;
+    text-transform: capitalize;
+    color:rgb(121, 66, 24);
+    list-style-type: none;
+    margin-left:-2.5rem;
+}
+.listePuce::before{
+    content:"\2022";
+    margin-right:1.5rem;
+    color:rgb(121, 66, 24);
+}
+.listePuce{
+    display:flex;
+    color:black;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: none;
+    margin: 0 0 1rem 1rem;
+}
+.num{
+    display:flex;
+}
+.listeNum::before{
+    content:counter(li)"\2022";
+    margin-right:1.5rem;
+    color:rgb(121, 66, 24);
+    font-weight: bold;
+}
+.listeNum{
+    display:flex;
+    color:black;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: none;
+    margin: 0 0 1rem 1rem;
+    counter-increment: li;
+}
+li:first-of-type{
+    margin-top:1rem;
+}
+span{
+    font-weight: bold;
+    text-transform:capitalize ;
+}
+.tableau{
+    display:flex;
+    margin:1rem 0 1rem 0;
+}
+.separator{
+    height:1px;
+    background-color: grey;
+}
+.para{
+    height:1px;
+    background-color: lightgrey;
+}
+.colTableau{
+    width:50%;
+}
+.colTableau:first-of-type{
+    margin-left:1rem;
+}
+.colTableau:nth-of-type(2){
+    color:rgb(121, 66, 24);
+    font-weight: bold;
+}
+@media(max-width:768px){
+    body{
+        margin: 0 0;
+        padding:0 0;
+    }
+    .image{
+        border-radius: 0;
+    }
+    .container{
+        width:100%;
+        margin:0 0;
+        padding:0rem 0rem 2rem 0rem;
+        border-radius: 0;
+    }
+    .cardContainer{
+        padding:0 2rem 0 2rem;
+    }
+}

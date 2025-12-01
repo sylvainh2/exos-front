@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "roboto";
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+    font-family: "young-serif";
+    src: url(./assets/fonts/Young_Serif/YoungSerif-Regular.ttf);
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    background-color: white;
+    border-radius: 10px;
+    margin:10rem auto;
+    width:32rem;
+    display:flex;
+}
+.photo{
+    width:16rem;
+    height:100%;
+    border-radius: 10px 0 0 10px;
+}
+.textCard{
+    padding:1.5rem;
+}
+.miniTitle{
+    font-size: 0.7rem;
+    color:grey;
+}
+article{
+    font-family: "roboto";
+    font-size: 0.8rem;
+    color:grey;
+}
+h1{
+    font-family: "young-serif";
+    width:80%;
+}
+.priceSliced{
+    font-size: 0.7rem;
+    color:grey;
+    text-decoration: line-through;
+    height:100%;
+    padding-left:1rem;
+}
+.priceReal{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:rgb(37, 103, 37);
+}
+.price{
+    display:flex;
+    align-items: center;
+}
+.buttonContainer{
+    text-align: center;
+}
+.button{
+    background-color:rgb(37,103,37);
+    color:white;
+    text-decoration: none;
+    padding:0.5rem 1rem;
+    border-radius: 5px;
+    margin:0 auto;
+}
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+        margin:2rem auto;
+        width:90%;
+        border-radius: 10px;
+    }
+    .photo{
+        border-radius: 10px 10px 0 0;
+        width:100%;
+    }
+}

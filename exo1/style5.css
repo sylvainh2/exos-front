@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "roboto";
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+body{
+    background-color:rgb(203, 234, 226);
+    font-family: "roboto";
+}
+.container{
+    background-color: white;
+    border-radius: 10px;
+    width:50%;
+    margin:0 auto;
+    padding:0.2rem 2rem 2rem 2rem;
+}
+.formulaire{
+    font-size: 0.8rem;
+}
+span{
+    color:#0C7C69;
+}
+.card{
+    display:flex;
+    gap:10px;
+}
+.cardDouble{
+    display:flex;
+    gap:10px;
+}
+.box{
+    display:flex;
+    flex-direction: column;
+}
+.double{
+    width:50%;
+}
+.simple{
+    width:100%;
+}
+input{
+    border-radius: 5px;
+    padding:0.7rem 0.5rem 0.7rem 0.5rem;
+    box-shadow: none;
+    border:1px solid dimgray;
+}
+label{
+    color:dimgray;
+    margin:1rem 0;
+}
+.textA{
+    resize:none;
+    border-radius: 5px;
+    border:1px solid dimgray;
+    padding:0 0.5rem;
+}
+.radio{
+    border:1px solid dimgray;
+    border-radius: 5px;
+}
+.radioInput{
+    margin-left:1rem;
+}
+#consent{
+    margin:2rem 0;
+}
+.subBut{
+    width:100%;
+    background-color: #0C7C69;
+    color:white;
+    padding:0.7rem 0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+@media(max-width:768px){
+    .container{
+        width:80%;
+    }
+    .cardDouble{
+        flex-direction: column;
+        gap:0;
+    }
+    .textA{
+        height:12rem;
+    }
+    .double{
+        width:100%;
+    }
+    .cardGap{
+        gap:1rem;
+    }
+}
