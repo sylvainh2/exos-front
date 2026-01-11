@@ -1,0 +1,155 @@
+:root{
+    --black: rgb(37, 34, 37);
+    --white: white;
+    --grisfonce: rgb(58, 54, 54);
+    /* --grisfonce:grey; */
+}
+body{
+    margin:0 0;
+    padding:0 0;
+    background-color:var(--black);
+    color:var(--white);
+}
+.extension{
+    background-color: var(--grisfonce);
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:2rem auto;
+    width:78%;
+    height: 2rem;
+    padding:1rem 1rem;
+    border-radius: 15px;
+}
+.atome{
+    color:red;
+}
+.toggleLight {
+    border-radius: 5px;
+    padding:0.8rem;
+    background-color: rgb(70, 63, 63);
+}
+.extensionList{
+    width:80%;
+    margin:4rem auto 2rem;
+    display:flex;
+    justify-content: space-between;
+}
+.extText{
+    font-size: 1.5rem;
+
+}
+.extIcon i{
+    margin-right:10px;
+}
+.nav{
+    list-style-type: none;
+    font-size: 2rem;
+}
+.navList{
+    display:flex;
+    gap:10px;
+}
+.but{
+    list-style-type: none;
+    border: 1px solid grey;
+    border-radius: 15px;
+    background-color: var(--grisfonce);
+    color:white;
+    padding:0.5rem 1rem;
+}
+.actif{
+    background-color: red;
+    color:black;
+}
+.cardSection{
+    width:80%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+.card{
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: var(--grisfonce);
+
+}
+.cardTitle{
+    display:flex;
+    align-items:center;
+    margin-top:1rem;
+}
+.cardIcon{
+    width:3rem;
+    text-align:center;
+    border-radius:5px;
+    padding:1rem 0 1rem 0;
+    margin:-2rem 1.5rem 0 1.5rem;
+}
+.cardText{
+    width:80%;
+}
+.cardActive{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:1rem;
+}
+.cardTextArticle{
+    font-size:0.9rem;
+}
+.cardTitleText{
+    line-height:0.2rem;
+}
+.actifBut{
+    height:0.9rem;
+    width:1.75rem;
+    border-radius:0.75rem;
+    margin:0 1.5rem 1rem 0;
+}
+.slideBut{
+    background-color:white;
+    width:0.75rem;
+    height:0.75rem;
+    border-radius:50%;
+}
+.butOff{
+    transform:translate(-35%,-10%);
+}
+.butOn{
+    transform:translate(70%,-10%);
+}
+.removeBut{
+    margin:0 0 1rem 1.5rem;
+    color:white;
+    background-color: rgb(70, 63, 63);
+    padding:0.5rem 1rem;
+    border-radius:20px;
+    border:1px solid grey;
+}
+.bkgreen{
+    background-color:green;
+}
+.bkturquoise{
+    background-color:rgba(77, 218, 231, 1);
+}
+.bksaumon{
+    background-color:rgba(254, 186, 150, 1);
+}
+.bkpink{
+    background-color:pink;
+}
+.bkpurple{
+    background-color:rgba(225, 94, 249, 1);
+}
+.bkblue{
+    background-color:blue;
+}
+.bkred{
+    background-color:red;
+}
+.bkgrey{
+    background-color:grey;
+}
