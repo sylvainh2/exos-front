@@ -73,6 +73,16 @@ function affichageBut(e){
     })
     affichage(display);
 }
+function remove(e){
+    const removeIndex = e.target.id;
+    cards.splice(removeIndex,removeIndex+1);
+    const parent = document.querySelector(".cardSection");
+    const art = document.querySelectorAll(".card").forEach((arti)=>{
+        parent.removeChild(arti);
+    })
+    console.log(display,cards);
+    affichage(display);
+}
 function affichage(display){
     document.querySelectorAll(".but").forEach((bouton)=>{
     if(bouton.innerHTML===display){
@@ -91,6 +101,7 @@ function affichage(display){
         }
         data.index=index;
     })
+    const remov = document.querySelectorAll(".removeBut").forEach((button)=>{button.addEventListener("click",remove)});
 }
 function slideClick(e){
     const el = e.target;
