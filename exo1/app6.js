@@ -76,7 +76,6 @@ function affichageBut(e){
 function remove(e){
     const removeIndex = e.target.parentNode.parentElement.id;
     const cardSplice = cards.splice(removeIndex,1);
-    console.log(removeIndex,cardSplice);
     const parent = document.querySelector(".cardSection");
     const art = document.querySelectorAll(".card").forEach((arti)=>{
         parent.removeChild(arti);
