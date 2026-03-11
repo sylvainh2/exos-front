@@ -36,7 +36,7 @@ function createCard(icone,titre,texte,actif,color,index){
     const div4 = document.createElement("div");
     div4.setAttribute("class","cardActive");
     const but1 = document.createElement("button");
-    but1.setAttribute("class","removeBut");
+    but1.setAttribute("class","removeBut pointer");
     const but2 = document.createElement("button");
     if(actif){
         classBut=" bkred";
@@ -45,7 +45,7 @@ function createCard(icone,titre,texte,actif,color,index){
         classBut=" bkgrey";
         classSlide=" butOff";
     }
-    but2.setAttribute("class","actifBut"+classBut);
+    but2.setAttribute("class","actifBut"+classBut+" pointer");
     const div5 = document.createElement("div");
     div5.setAttribute("class","slideBut"+classSlide);
     div3.appendChild(h2);

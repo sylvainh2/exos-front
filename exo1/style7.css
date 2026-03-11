@@ -1,0 +1,161 @@
+:root{
+    --grisfonce:rgb(50, 50, 76);
+    --grismoyen:rgb(54, 54, 80);
+    --grisclair:rgb(66, 66, 92);
+}
+body{
+    background-color: rgb(0, 0, 35);
+    color:white;
+}
+.header{
+    width:80%;
+    margin:2rem auto;
+    display:flex;
+    justify-content: space-between;
+}
+.orange{
+    color:orange;
+}
+.wheel{
+    font-size: 2rem;
+}
+.choice{
+    margin-left:0.5rem;
+}
+i:first-of-type{
+    margin-right: 0.5rem;
+}
+.langage{
+    background-color: var(--grisfonce);
+    border-radius: 5px;
+    padding:0.5rem 1rem 0.5rem 1rem;
+}
+.appTitle{
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin:4rem 0 4rem 0;
+}
+.form{
+    width:80%;
+    margin:0 auto;
+}
+.searchForm{
+    display:flex;
+    justify-content: center;
+}
+.searchCityCont{
+    background-color: var(--grisfonce);
+    padding:0.5rem 8rem 0.5rem 1rem;
+    border-radius: 7px;
+}
+.mag{
+    color:rgb(248, 248, 248);
+}
+#searchCity{
+    background-color: transparent;
+    color:rgb(248, 248, 248);
+    border: none;
+    font-size: 1.2rem;
+}
+#searchBut{
+    margin-left: 1rem;
+    padding:0.5rem 1rem 0.5rem 1rem;
+    background-color: rgb(77, 77, 252);
+    color:rgb(248, 248, 248);
+    border-radius: 7px;
+    border:none;
+    font-size: 1.2rem;
+}
+h2{
+    font-weight: bold;
+    margin: 2rem 0 1rem 0;
+}
+.tiles{
+    width:80%;
+    margin:2rem auto;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:20px;
+}
+.todayTile{
+    background-color: rgb(77, 77, 252);
+    height:200px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.todayTileCard{
+    width:95%;
+    height:100%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todayCont{
+    display:flex;
+    justify-content: center;
+}
+.clockSection{
+    background-color: var(--grisfonce);
+    border-radius: 15px;
+}
+.clockTiles{
+    width:80%;
+    background-color: var(--grismoyen);
+    height:50px;
+    margin:0 auto 10px auto;
+    border-radius: 7px;
+    border:1px solid var(--grisclair);
+}
+.clockTitleCont{
+    width:80%;
+    margin:2rem auto 1rem auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todayInfos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:15px;
+}
+.todayInfo{
+    background-color: var(--grisfonce);
+    border-radius: 10px;
+    border:1px solid var(--grisclair);
+    height:125px;
+}
+.todayWeather{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:15px;
+}
+.todayWeatherTiles{
+    height:160px;
+    background-color: var(--grisfonce);
+    border-radius: 10px;
+    border:1px solid var(--grisclair);
+}
+.day{
+    width:30%;
+}
+#daylist{
+    max-width:80%;
+    background-color: transparent;
+    color: white;
+    border:none;
+    padding:0.5rem 1rem 0.5rem 1rem;
+}
+#daylist:active{
+    border:none;
+}
+.dayButCont{
+    background-color: var(--grismoyen);
+    display:flex;
+    align-items: center;
+    color:white;
+    border-radius: 7px;
+}
