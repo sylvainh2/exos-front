@@ -105,14 +105,15 @@ function affichage(display){
 }
 function slideClick(e){
     const el = e.target;
-    if(el.className==="actifBut bkred"){
-        el.className="actifBut bkgrey";
+    if(el.className.includes("actifBut bkred")){
+        el.className="actifBut bkgrey pointer";
         el.childNodes[0].className="slideBut butOff";
-    }else if(el.className==="actifBut bkgrey"){
-        el.className="actifBut bkred";
+        cards[el.parentNode.parentElement.id].actif=!cards[el.parentNode.parentElement.id].actif;
+    }else if(el.className.includes("actifBut bkgrey")){
+        el.className="actifBut bkred pointer";
         el.childNodes[0].className="slideBut butOn";
+        cards[el.parentNode.parentElement.id].actif=!cards[el.parentNode.parentElement.id].actif;
     }
-    cards[el.parentNode.parentElement.id].actif=!cards[el.parentNode.parentElement.id].actif;
 }
 function nightday(e){
     const root = document.documentElement;
